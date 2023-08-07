@@ -1,0 +1,1 @@
+export const API_URL=process.env.NODE_ENV === 'production'? 'https://port-0-goodsshop-server-eu1k2lll0anx0y.sel4.cloudtype.app' :"http://localhost:8080";

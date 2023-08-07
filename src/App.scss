@@ -178,16 +178,32 @@ $desktop-min: 1440px;
     }
     .p-list{
       display: flex;
+      flex-wrap: wrap;
+
+      
       .product-link{
         text-decoration: none;
         color: #333;
+        flex-basis: 31%;
+        
         &:not(:last-child){
           margin-right: 20px;
         }
 
       .product-card{
+        position: relative;
+        flex-basis: 32%;
         &:not(:last-child){
           margin-right: 20px;
+          .product-blur{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ffffffaa;
+            pointer-events: none;
+          }
         }
         .product-img{width: 100%}
         .product-contents{
